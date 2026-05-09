@@ -22,7 +22,7 @@ def get_requirements(req):
 
 setup(
     name="pymd-extensions-lz",
-    version="0.0.1",
+    version="0.0.2",
     author="lzimd",
     author_email="29934671+lzimd@users.noreply.github.com",
     description="Python Markdown Extensions",
