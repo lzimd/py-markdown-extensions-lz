@@ -61,6 +61,9 @@ class HugoPelicanMetaPreprocessor(Preprocessor):
         if not hasattr(self.md, "Meta"):
             return lines
 
+        # Non-reentrant for pelican FORMATTED_FIELDS (default: [summary])
+        self.md.preprocessors.deregister("hugo_pelican_meta_fixer")
+
         meta = self.md.Meta  # dict produced by the original Meta extension
 
         # ---- 1. Fix tags: [xx, yy, zz] → xx, yy, zz -------------------------

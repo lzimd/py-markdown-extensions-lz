@@ -20,4 +20,5 @@ Adjust metadata for Pelican/Hugo compatibility.
 - categories: [foo]
 - date: YYYY-MM-DD
 - modified: YYYY-MM-DD
+- summary: The quick brown fox jumps over the lazy dog.
 
